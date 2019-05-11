@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Галерея</title>
+    <style>
+    .header{
+        text-align: center;
+    }
+    .list{
+        display: inline-block;
+        margin: 20px;
+    }
+    .nat{
+        background-color: red;
+        padding: 20px;
+        border-radius: 10px; 
+    }
+    .car{
+        background-color: aqua;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .game{
+        background-color: green;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .as_1{text-decoration: none; color: blue;} .as_2{text-decoration: none; color:green;} .as_3{text-decoration: none; color: white;}
+    .nat_1{display: inline-block; width: 49%; height: 950px; transition: 1s;} .nat_2{display: inline-block; width: 49%; height: 950px; transition: 1s;} .nat_3{display: inline-block; width: 49%; height: 950px; transition: 1s;}
+    .nat_4{display: inline-block; width: 49%; height: 950px; transition: 1s;}    
+    .car_1{display: inline-block; width: 49%; height: 950px; transition: 1s;} .car_2{display: inline-block; width: 49%; height: 950px; transition: 1s;} .car_3{display: inline-block; width: 49%; height: 950px; transition: 1s;}
+    .car_4{display: inline-block; width: 49%; height: 950px; transition: 1s;}
+    .ga_1{display: inline-block; width: 49%; height: 950px; transition: 1s;} .ga_2{display: inline-block; width: 49%; height: 950px; transition: 1s;} .ga_3{display: inline-block; width: 49%; height: 950px; transition: 1s;}
+    .ga_4{display: inline-block; width: 49%; height: 950px; transition: 1s;}
+    .nat_1:hover{transform: rotate(-3deg)} .nat_1:hover ~ .nat_2{transform: rotate(3deg)}
+    .nat_2:hover{transform: rotate(3deg)}  .nat_2:hover ~ .nat_1{transform: rotate(-3deg)}
+    .nat_3:hover{transform: rotate(-3deg)} .nat_3:hover ~ .nat_4{transform: rotate(3deg)}
+    .nat_4:hover{transform: rotate(3deg)} .nat_4:hover ~ .nat_3{transform: rotate(-3deg)}
+    .ga_1:visited{tran}
+    </style>
+</head>
+<body>
+<header>
+        <h1 class="header">Это галерея</h1>
+        <h2>
+                <ul class="ul">
+                    <li class="list"><div class="nat"><a  class="as_1" href="#nature">Природа</a></li></div>
+                    <li class="list"><div class="car"><a  class="as_2" href="#cars">Машины</a></li></div>
+                    <li class="list"><div class="game"><a class="as_3" href="#games">Игры</a></li></div>
+                </ul>
+            </h2>
+</header>
+<div id="nature" style="background-color: rgba(81, 179, 224, 0.89); margin-bottom: 0">
+   <h1 style="text-align: center">Природа</h1>
+   <img class="nat_1" src="imgs/nat1.jpg" alt="">
+   <img class="nat_2" src="imgs/nat2.jpg" alt="">
+   <img class="nat_3" src="imgs/nat3.jpg" alt="">
+   <img class="nat_4" src="imgs/nat4.jpg" alt="">
+</div>
+
+<div id="cars" style="background-color: rgba(136, 61, 221, 0.733)">
+    <h1 style="text-align:center; color:blue">Машины</h1>
+    <img class="car_1"src="imgs/car1.jpg" alt="">
+    <img class="car_2"src="imgs/car2.jpg" alt="">
+    <img class="car_3"src="imgs/car3.jpg" alt="">
+    <img class="car_4"src="imgs/car4.jpg" alt="">
+</div>
+
+<div id="games" style="background-color: rgba(136, 61, 221, 0.733)">
+        <h1 style="text-align:center; color:indigo">Игры</h1>
+        <h2  style="text-align:center;">Хотите знать больше про игры? <br>  - Кликайте на картинки и читайте про них</h2>
+        <a href="https://ru.wikipedia.org/wiki/Mass_Effect_3"><img class="ga_1"src="imgs/ga1.jpg"></a> 
+       <a href="https://ru.wikipedia.org/wiki/Battlefield_3"><img class="ga_2"src="imgs/ga2.jpg" alt=""></a>
+       <a href="https://ru.wikipedia.org/wiki/Dota_2"><img class="ga_3"src="imgs/ga3.jpg" alt=""></a>
+       <a href="https://ru.wikipedia.org/wiki/Tom_Clancy’s_Rainbow_Six_Siege"><img class="ga_4"src="imgs/ga4.jpg" alt=""></a>
+    </div>
+
+</body>
+</html>
